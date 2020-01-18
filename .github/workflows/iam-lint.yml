@@ -1,0 +1,16 @@
+name: Test
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: xen0l/iam-lint@initial
+      with:
+        path: policies
