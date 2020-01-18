@@ -14,4 +14,4 @@ jobs:
     - uses: xen0l/iam-lint@initial
       with:
         path: policies
-        minimum_severify: HIGH
+        minimum_severity: HIGH
