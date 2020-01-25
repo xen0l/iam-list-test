@@ -2,7 +2,10 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Action": "s3:assumeRole",
+            "Action": [
+                "s3:assumeRole",
+                "s3:GetObject"
+            ],
             "Resource": "*",
             "Effect": "Allow"
         }
